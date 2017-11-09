@@ -1,6 +1,16 @@
-# README
+## Instruction to Reproduce the Possible Bug
+	1. use latest JDK 8
+	2. download cljs.jar from clojurescript 1.9.946 https://github.com/clojure/clojurescript/releases/tag/r1.9.946
+## Description
+	3. execute
+	   `java -cp cljs.jar:src clojure.main repl.clj`
+	4. Open Chrome browser on http://localhost:9000 and open the inspector tool
+	5. Click the `Load Bar!` button
+	6. See the error on console log
+	
+## Description	
 
-fails to load required google closure's namespace in the loaded module.
+Fails to load required google closure's namespace in the loaded module.
 
 The codes here are taken from the guide https://clojurescript.org/guides/code-splitting and modified to reproduce the bugs.
 
