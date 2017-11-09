@@ -9,12 +9,12 @@ basically, I modified the `src/bar/core.cljs` from above guide like this:
 ```clojure
 (ns bar.core
   (:require 
-  [goog.net.cookies :as gcookies]
+  [goog.net.cookies :as gcookies] ;; I require goog.net.cookies
   [cljs.loader :as loader]))
 
 (enable-console-print!)
 
-(defn cookie-enabled?
+(defn cookie-enabled? ;; I create wrapper function
   []
   (.isEnabled goog.net.cookies))
 
@@ -22,7 +22,7 @@ basically, I modified the `src/bar/core.cljs` from above guide like this:
 
 (defn woz []
   (println "WOZ!")
-  (println "cookie enabled?" (cookie-enabled?)))
+  (println "cookie enabled?" (cookie-enabled?))) ;; call cookie-enabled?
 
 (loader/set-loaded! :bar)
 ```
