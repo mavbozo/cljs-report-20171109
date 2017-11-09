@@ -1,8 +1,8 @@
 ## Instruction to Reproduce the Possible Bug
+	0. clone this repo
 	1. use latest JDK 8
 	2. download cljs.jar from clojurescript 1.9.946 https://github.com/clojure/clojurescript/releases/tag/r1.9.946
-## Description
-	3. execute
+	3. execute this on repo directory
 	   `java -cp cljs.jar:src clojure.main repl.clj`
 	4. Open Chrome browser on http://localhost:9000 and open the inspector tool
 	5. Click the `Load Bar!` button
